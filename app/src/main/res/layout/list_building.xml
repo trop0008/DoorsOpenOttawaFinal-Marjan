@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/secondaryLightColor">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:contentDescription="No Image"
+            android:gravity="center_vertical"
+            android:src="@drawable/noimagefound"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/buildingNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/card_margin"
+            android:layout_toEndOf="@id/imageView"
+            android:gravity="center_vertical"
+            android:text="a Building"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/buildingAddressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buildingNameText"
+            android:layout_below="@id/buildingNameText"
+            android:layout_margin="@dimen/card_margin"
+            android:gravity="center_vertical"
+            android:text="a Building"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+
+        <ImageButton
+            android:id="@+id/editBuildingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buildingAddressText"
+            android:layout_margin="16dp"
+            android:background="@null"
+            android:contentDescription="Edit Course Button"
+            android:src="@android:drawable/ic_menu_edit"
+            android:layout_toRightOf="@id/imageView"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/deleteBuildingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_toRightOf="@id/editBuildingButton"
+            android:background="@null"
+            android:contentDescription="Delete Course Button"
+            android:src="@android:drawable/ic_menu_delete"
+            android:layout_below="@id/buildingAddressText"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

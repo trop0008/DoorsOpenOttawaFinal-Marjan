@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Doors Open Ottawa</string>
+
+    <string name="post_data">New Building...</string>
+    <string name="action_about">About Author:</string>
+    <string name="author" translatable="false">Marjan Tropper (trop0008)</string>
+
+    <string name="show_all_buildings">Show All Buildings</string>
+    <string name="choose_a_category">Choose a Category</string>
+    <string-array name="categories">
+        <item>Religious</item>
+        <item>Embassies</item>
+        <item>Government</item>
+        <item>Functional</item>
+        <item>Galleries and Theatres</item>
+        <item>Academic Institutions</item>
+        <item>Sports and Leisure</item>
+        <item>Community and/or Care Centres</item>
+        <item>Business and/or Foundations</item>
+        <item>Museums, Archives and Historic Sites</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
